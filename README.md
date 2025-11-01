@@ -174,7 +174,7 @@ http://localhost:5173
 ```
 4.The frontend expects the backend (Spring Boot service) to be running locally and accepting requests (e.g. on port 8081).
 - API base URLs are called via Axios.
-- For browser usage, the backend should allow CORS or you can configure a local proxy.
+- During development, the frontend communicates with the Spring Boot backend running on a different port. CORS/DEV proxy is configured accordingly.
 
 ## 📦 Build for Production
 
