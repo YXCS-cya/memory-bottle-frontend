@@ -21,6 +21,12 @@ The backend service (Spring Boot + MySQL) is in a separate repository and expose
 ---
 
 ## 🌟 Key Features
+<p align="center">
+  🎥 <b>Demo Preview</b><br>
+  <a href="https://github.com/YXCS-cya/memory-bottle-frontend/tree/main/docs/media">
+    👉 Click here to view the short Memory Bottle demonstration (GIF / Video)
+  </a>
+</p>
 
 ### 🏠 Home / Memory Feed
 - Displays all memories (text + media preview: image / video).
