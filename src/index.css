@@ -1,0 +1,66 @@
+/* 统一字体与基础样式 */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #213547;
+  background-color: #ffffff;
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 链接样式 */
+a {
+  font-weight: 500;
+  color: #2563eb; /* Tailwind 的 blue-600 */
+  text-decoration: inherit;
+}
+a:hover {
+  color: #1d4ed8; /* blue-700 */
+}
+
+/* 移除全局 flex 居中，改为由各页面组件控制 */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f9fafb; /* Tailwind 的 gray-50 */
+}
+
+/* 按钮样式（仅作为默认） */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #2563eb; /* blue-600 */
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+button:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+/* Light 模式适配 */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #3b82f6; /* blue-500 */
+  }
+  button {
+    background-color: #2563eb;
+  }
+}
+
+/* 💡 最关键：导入 Tailwind 基础层 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
